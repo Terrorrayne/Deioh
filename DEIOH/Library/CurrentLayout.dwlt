@@ -107,10 +107,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 913, y: 421}
-  m_MaxSize: {x: 22008, y: 14042}
+  m_MinSize: {x: 915, y: 421}
+  m_MaxSize: {x: 22010, y: 14042}
   vertical: 0
-  controlID: 3566
+  controlID: 13112
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 421}
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 3567
+  controlID: 13038
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 392}
   m_MaxSize: {x: 14006, y: 14042}
   vertical: 1
-  controlID: 3592
+  controlID: 12978
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 271}
   m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
-  controlID: 3593
+  controlID: 13064
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -442,9 +442,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -9.126514, y: -16.653168, z: 28.101671}
+    m_Target: {x: 13.234104, y: -21.832632, z: 24.061548}
     speed: 2
-    m_Value: {x: -9.126514, y: -16.653168, z: 28.101671}
+    m_Value: {x: 13.234104, y: -21.832632, z: 24.061548}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -467,13 +467,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.25371945, y: 0.15158926, z: -0.040295735, w: -0.9544755}
+    m_Target: {x: -0.34969416, y: -0.085549034, z: 0.03208501, w: -0.9323981}
     speed: 2
-    m_Value: {x: -0.25371945, y: 0.15158926, z: -0.040295735, w: -0.9544755}
+    m_Value: {x: -0.34969416, y: -0.085549034, z: 0.03208501, w: -0.9323981}
   m_Size:
-    m_Target: 39.37264
+    m_Target: 38.71691
     speed: 2
-    m_Value: 39.37264
+    m_Value: 38.71691
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -538,9 +538,9 @@ MonoBehaviour:
     height: 638
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 4e260000
     m_LastClickedID: 0
-    m_ExpandedIDs: dcfbffff00000000e2280000722b0000
+    m_ExpandedIDs: dcfbffff00000000e6280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -600,19 +600,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Materials
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 94260000
-    m_LastClickedID: 9876
-    m_ExpandedIDs: 00000000b8250000482600004c2600007e2600005627000000ca9a3bffffff7f
+    m_SelectedIDs: b8250000
+    m_LastClickedID: 9656
+    m_ExpandedIDs: 00000000b8250000482600004c2600007e2600005a27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -640,7 +640,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b8250000482600004c2600007e2600005627000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000b8250000482600004c2600007e2600005a27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -668,7 +668,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 42300000
+    m_ExpandedInstanceIDs: 4230000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -692,7 +692,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 164}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 203
 --- !u!114 &20
@@ -747,7 +747,7 @@ MonoBehaviour:
     y: 92
     width: 435
     height: 966
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 420}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 403
