@@ -1961,6 +1961,7 @@ GameObject:
   - component: {fileID: 625045618}
   - component: {fileID: 625045617}
   - component: {fileID: 625045621}
+  - component: {fileID: 625045622}
   m_Layer: 0
   m_Name: knight topdown (1)
   m_TagString: Untagged
@@ -2043,6 +2044,17 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &625045622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 625045616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64eb48dded7461047864154ba9465a91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &635038024
 GameObject:
   m_ObjectHideFlags: 0
@@ -2616,7 +2628,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 715345958}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 114.22, z: -111.22}
+  m_LocalPosition: {x: 0, y: 114.22, z: -112.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2634,8 +2646,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lerpSpeed: 1
-  aheadScale: 1.5
-  followObj: {fileID: 625045617}
+  lerpSpeedSlow: 0.1
+  movingFocusAhead: 5
+  restFocusAhead: 2
+  restRadius: 7
+  followObj: {fileID: 1879412449}
 --- !u!114 &715345965
 MonoBehaviour:
   m_ObjectHideFlags: 0
