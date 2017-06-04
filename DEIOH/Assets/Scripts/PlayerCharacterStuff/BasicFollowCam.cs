@@ -75,15 +75,15 @@ public class BasicFollowCam : MonoBehaviour
 			// if we are then go ahead and set us resting 
 
 			print(transform.position + " || " + (followObj.transform.position + foc + offset));
-			if (Vector3.Distance(transform.position, followObj.transform.position + foc + offset) < 1)
+			if (Vector3.Distance(transform.position, (followObj.transform.position + foc + offset)) < 1)
 			{
 				cameraResting = true;
-				restCenter = foc;
+				restCenter = followObj.transform.position + foc;
 			}
 		}
 		else
 		{
-			restCenter = foc;
+			restCenter = followObj.transform.position + foc;
 		}
 	}
 

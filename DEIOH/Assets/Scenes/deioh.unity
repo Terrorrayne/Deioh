@@ -2646,10 +2646,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lerpSpeed: 1
-  lerpSpeedSlow: 0.1
+  lerpSpeedSlow: 0.2
   movingFocusAhead: 5
   restFocusAhead: 2
-  restRadius: 7
+  restRadius: 6
   followObj: {fileID: 1879412449}
 --- !u!114 &715345965
 MonoBehaviour:
