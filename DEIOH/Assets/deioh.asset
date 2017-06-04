@@ -14,16 +14,16 @@ MonoBehaviour:
   debugViews:
     m_Enabled: 1
     m_Settings:
-      mode: 0
+      mode: 5
       depth:
         scale: 1
       motionVectors:
-        sourceOpacity: 1
+        sourceOpacity: 0
         motionImageOpacity: 0
-        motionImageAmplitude: 16
-        motionVectorsOpacity: 1
-        motionVectorsResolution: 24
-        motionVectorsAmplitude: 64
+        motionImageAmplitude: 6.14
+        motionVectorsOpacity: 0
+        motionVectorsResolution: 8
+        motionVectorsAmplitude: 0.9
   fog:
     m_Enabled: 1
     m_Settings:
@@ -100,7 +100,7 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 1
+        intensity: 0.5
         threshold: 1
         softKnee: 0.4
         radius: 5.2

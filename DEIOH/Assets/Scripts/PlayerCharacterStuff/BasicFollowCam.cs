@@ -14,9 +14,28 @@ public class BasicFollowCam : MonoBehaviour
 	Vector3 offset;
 
 	Vector3 restCenter;
-	bool cameraResting = false;
-
+	bool _cameraResting = false;
+	float restAndMoveTimer = 0;
 	Vector3 foc;
+
+	float goalLerp;
+	float currentLerp;
+	float lerpLerp;
+
+	public bool CameraResting
+	{
+		get
+		{
+			return _cameraResting;
+		}
+
+		set
+		{
+			_cameraResting = value;
+			if (value)
+				restAndMoveTimer = 0;
+		}
+	}
 
 	// Use this for initialization
 	void Start()
@@ -27,17 +46,22 @@ public class BasicFollowCam : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (cameraResting)
+		currentLerp = Mathf.Lerp(currentLerp, goalLerp, lerpLerp * Time.deltaTime);
+
+
+		if (CameraResting)
 		{
 			// check to see that we are still in the correct radius
 			if (Vector3.Distance(followObj.transform.position, restCenter) > restRadius)
 			{
-				cameraResting = false;
+				CameraResting = false;
 			}
 			else
 			{
+				//restAndMoveTimer += Time.deltaTime;
 				// slowly move camera
 				foc = followObj.transform.forward * restFocusAhead;
+				//MoveCamera(Mathf.Clamp01(lerpSpeedSlow * restAndMoveTimer), 3);
 				MoveCamera(lerpSpeedSlow);
 			}
 		}
@@ -57,27 +81,29 @@ public class BasicFollowCam : MonoBehaviour
 
 		}
 
-		// todo: create small area where camrea will track more slowly or not at all, once player leaves this area camrea switches to more aggressive tracking
-		// goal is to give the feel of zelda/super metroid where camera wouldn't immediatly follow player
 	}
 
 	void MoveCamera(float camSpd)
 	{
+		// todo: make camSpd lerp so transitions between rest and non rest are fluid-er. more fluid
 
-		transform.position = Vector3.Lerp(transform.position, followObj.transform.position + foc + offset, camSpd * Time.deltaTime);
+		goalLerp = camSpd;
+		lerpLerp = 1.5f;
+
+		transform.position = Vector3.Lerp(transform.position, followObj.transform.position + foc + offset, currentLerp * Time.deltaTime);
 	}
 
 	void SetNewRestArea()
 	{
-		if (!cameraResting)
+		if (!CameraResting)
 		{
 			//check to see if we're close to our restFocus point
 			// if we are then go ahead and set us resting 
 
 			print(transform.position + " || " + (followObj.transform.position + foc + offset));
-			if (Vector3.Distance(transform.position, (followObj.transform.position + foc + offset)) < 1)
+			if (Vector3.Distance(transform.position, (followObj.transform.position + foc + offset)) < 2)
 			{
-				cameraResting = true;
+				CameraResting = true;
 				restCenter = followObj.transform.position + foc;
 			}
 		}
