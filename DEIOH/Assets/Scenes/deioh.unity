@@ -3623,9 +3623,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lerpSpeed: 1
   lerpSpeedSlow: 0.15
+  lerpSlowCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.7022397
+      value: 0.24112305
+      inSlope: 0.58814883
+      outSlope: 0.58814883
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0.7
+      inSlope: 3.1390314
+      outSlope: 3.1390314
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
   movingFocusAhead: 5
   restFocusAhead: 2
-  restRadius: 11
+  restRadius: 15
   followObj: {fileID: 1879412449}
 --- !u!114 &715345965
 MonoBehaviour:

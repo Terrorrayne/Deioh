@@ -4,6 +4,7 @@ public class BasicFollowCam : MonoBehaviour
 {
 	public float lerpSpeed = 20f;
 	public float lerpSpeedSlow = 1f;
+	public AnimationCurve lerpSlowCurve;
 	[Tooltip("how far ahead we want to look when we are moving (will never reach this unless lerp is set very high)")]
 	public float movingFocusAhead = 5f;
 	[Tooltip("how fare ahead we want to look when we come to a standstill, should be less than MovingFocusAhead")]
@@ -52,17 +53,19 @@ public class BasicFollowCam : MonoBehaviour
 		if (CameraResting)
 		{
 			// check to see that we are still in the correct radius
-			if (Vector3.Distance(followObj.transform.position, restCenter) > restRadius)
+			float distFromCenter = Vector3.Distance(followObj.transform.position, restCenter);
+
+			if (distFromCenter > restRadius)
 			{
 				CameraResting = false;
 			}
 			else
 			{
-				//restAndMoveTimer += Time.deltaTime;
 				// slowly move camera
 				foc = followObj.transform.forward * restFocusAhead;
-				//MoveCamera(Mathf.Clamp01(lerpSpeedSlow * restAndMoveTimer), 3);
-				MoveCamera(lerpSpeedSlow);
+
+				//MoveCamera(lerpSpeedSlow);
+				MoveCamera(lerpSlowCurve.Evaluate(distFromCenter / restRadius));
 			}
 		}
 		else
