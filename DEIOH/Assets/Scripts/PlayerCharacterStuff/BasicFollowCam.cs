@@ -103,7 +103,6 @@ public class BasicFollowCam : MonoBehaviour
 			//check to see if we're close to our restFocus point
 			// if we are then go ahead and set us resting 
 
-			print(transform.position + " || " + (followObj.transform.position + foc + offset));
 			if (Vector3.Distance(transform.position, (followObj.transform.position + foc + offset)) < 2)
 			{
 				CameraResting = true;
