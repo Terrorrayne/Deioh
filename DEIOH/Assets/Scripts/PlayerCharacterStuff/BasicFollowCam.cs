@@ -41,6 +41,7 @@ public class BasicFollowCam : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
+		transform.parent = null;
 		offset = transform.position - followObj.transform.position;
 	}
 
