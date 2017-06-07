@@ -31,4 +31,9 @@ public class UIController : MonoBehaviour
 	{
 		InteractUIElement.SetNewObjToFollow(obj);
 	}
+
+	public void InteractProgressBubble(float progress)
+	{
+		InteractProgressImg.fillAmount = Mathf.Clamp01(progress);
+	}
 }

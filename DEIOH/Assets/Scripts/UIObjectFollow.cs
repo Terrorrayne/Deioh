@@ -32,7 +32,7 @@ public class UIObjectFollow : MonoBehaviour
 			GetComponent<Text>().enabled = true;
 
 			// snap to new obj
-			transform.position = Camera.main.WorldToScreenPoint(objToFollow.position);
+			transform.position = Camera.main.WorldToScreenPoint(objToFollow.position + transform.up * 5);
 
 			// eventually i'd like stuff to fade in
 		}

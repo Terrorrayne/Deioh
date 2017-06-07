@@ -5,6 +5,18 @@ public class PlayerButtonInteraction : MonoBehaviour
 
 	public LayerMask buttonMask;
 
+	float progress = 0;
+	public float Progress
+	{
+		get { return progress; }
+
+		set
+		{
+			progress = Mathf.Clamp01(value);
+			UIController.self.InteractProgressBubble(progress);
+		}
+	}
+
 	// Use this for initialization
 	void Start()
 	{
@@ -24,7 +36,25 @@ public class PlayerButtonInteraction : MonoBehaviour
 			// move interact UI over this button
 			UIController.self.MoveInteractElement(col[0].transform);
 
-			col[0].GetComponent<IButton>().ButtonPress();
+			if (Input.GetButtonDown("Fire1"))
+			{
+				Progress += Time.deltaTime * 1.5f;
+			}
+
+			if (Input.GetButton("Fire1") && Progress > 0)
+			{
+				Progress += Time.deltaTime * 1.5f;
+			}
+
+			if (Progress == 1)
+			{
+				col[0].GetComponent<IButton>().ButtonPress();
+				Progress = 0;
+			}
+		}
+		if (Input.GetButtonUp("Fire1"))
+		{
+			Progress = 0;
 		}
 	}
 }
