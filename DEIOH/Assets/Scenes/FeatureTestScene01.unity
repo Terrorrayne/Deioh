@@ -5151,7 +5151,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.484
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!222 &1204318289
@@ -5411,7 +5411,7 @@ Prefab:
     - target: {fileID: 114160144399443672, guid: 1a06766ce946a824c8532792d6f6fffd,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114394209501392522, guid: 1a06766ce946a824c8532792d6f6fffd,
         type: 2}
@@ -6065,7 +6065,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh31864
+  m_Name: pb_Mesh14370
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -6241,6 +6241,26 @@ Prefab:
         type: 2}
       propertyPath: m_OcclusionCulling
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114331277182923476, guid: 81bb12d2cd6092b4685a88c974566c49,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20696058265001198, guid: 81bb12d2cd6092b4685a88c974566c49,
+        type: 2}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114331277182923476, guid: 81bb12d2cd6092b4685a88c974566c49,
+        type: 2}
+      propertyPath: rendTex
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107998929798760, guid: 81bb12d2cd6092b4685a88c974566c49,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 81bb12d2cd6092b4685a88c974566c49, type: 2}
