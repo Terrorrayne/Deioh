@@ -1,2 +1,8 @@
-show fps
-show cameraDebug
+show fps - displays fps stuff
+show cameraDebug - displays camera position/stats
+debug fly - allows player character to fly around, unaffected by environmental forces
+debug noclip - allows player character to move through walls, auto applies debug fly
+debug invincible - player cannot die/take damage
+debug freelook - camera is separated from the player, can move around 
+debug god - idk
+disable postprocess - disables post processing effects on camera
