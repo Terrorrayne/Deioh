@@ -18,7 +18,7 @@ public class Switch : MonoBehaviour, IButton
 		return true;
 	}
 
-	public void ButtonPress()
+	public void ButtonPress(PlayerButtonInteraction player)
 	{
 		signalTarget.RecieveSignal(signalMessage);
 		TriggerAnim();
