@@ -31,7 +31,7 @@ MonoBehaviour:
   antialiasing:
     m_Enabled: 0
     m_Settings:
-      method: 1
+      method: 0
       fxaaSettings:
         preset: 2
       taaSettings:
@@ -343,10 +343,10 @@ MonoBehaviour:
   dithering:
     m_Enabled: 1
   monitors:
-    currentMonitorID: 0
-    refreshOnPlay: 0
+    currentMonitorID: 1
+    refreshOnPlay: 1
     histogramMode: 3
-    waveformExposure: 0.12
+    waveformExposure: 0.28333333
     waveformY: 0
     waveformR: 1
     waveformG: 1
