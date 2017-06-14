@@ -69,7 +69,7 @@ public class variableframerate : MonoBehaviour
 	private void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		//cam.Render();
-		float time = Time.time - startTime;
+		float time = Time.time - startTime + 0.75f;
 		float rate = (time * 3) % 1;
 		rate *= rate * 1.1f;
 		rate = Mathf.Cos(rate);

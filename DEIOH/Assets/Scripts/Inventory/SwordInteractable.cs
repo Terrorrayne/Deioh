@@ -19,5 +19,6 @@ public class SwordInteractable : MonoBehaviour, IButton
 	{
 		// pick up
 		player.GetComponent<Inventory>().AddItem(item);
+		player.GetComponent<PlayerItemUsage>().UpdateInventoryImages();
 	}
 }

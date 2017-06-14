@@ -5,8 +5,13 @@ public class Inventory : MonoBehaviour
 
 	// based off https://unity3d.com/learn/tutorials/projects/adventure-game-tutorial/inventory?playlist=44381
 
-	public const int numItemSlots = 8;
-	public InventoryItem[] items = new InventoryItem[numItemSlots];
+	public int numItemSlots = 8;
+	public InventoryItem[] items;
+
+	public void Start()
+	{
+		items = new InventoryItem[numItemSlots];
+	}
 
 	public void AddItem(InventoryItem itemToAdd)
 	{
