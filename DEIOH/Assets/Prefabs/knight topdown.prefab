@@ -1392,6 +1392,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabde69324cabf746b08110bd356f95f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemWheel: {fileID: 0}
+  equipWheel: {fileID: 0}
+  itemLabel: {fileID: 0}
+  emptyItemSprite: {fileID: 21300000, guid: 51bee8cafe21d1943b2200912e56933c, type: 3}
 --- !u!114 &114278506488140448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1403,6 +1407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f20ffd18abd6464f92730b4839e5ce4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numItemSlots: 8
   items:
   - {fileID: 0}
   - {fileID: 0}
@@ -1610,7 +1615,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1990670224449812}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 689dc075d65945848b29de953bae4924, type: 3}
   m_Name: 
