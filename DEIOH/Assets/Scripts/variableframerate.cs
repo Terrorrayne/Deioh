@@ -74,6 +74,7 @@ public class variableframerate : MonoBehaviour
 		rate *= rate * 1.1f;
 		rate = Mathf.Cos(rate);
 		wobble = Mathf.Lerp(wobble, Random.value, 0.01f);
+
 		stretch = Mathf.Lerp(stretch, Random.Range(0.95f, 1.00f), 0.02f);
 		//mat.SetFloat("_Scroll", rate * 0.03f + wobble * 0.1f - 0.05f);
 		mat.SetFloat("_Scroll", extraScroll.Evaluate(time) + rate * 0.015f);
