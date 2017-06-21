@@ -13,4 +13,5 @@ public class InventoryItem : ScriptableObject
 	public GameObject worldPrefab;
 	[Tooltip("Item Script holds the script which controls how this item works once equipped")]
 	public ItemBehavior itemScript;
+	public GameObject equippablePrefab;
 }

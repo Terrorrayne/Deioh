@@ -65,7 +65,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EmissionScaleUI: 0
-    - _GammaCorrection: 0.8012135
+    - _GammaCorrection: 0.8265896
     - _Glossiness: 0.5
     - _GreenBits: 3
     - _GreenShades: 48
@@ -76,9 +76,9 @@ Material:
     - _Parallax: 0.02
     - _RedBits: 3
     - _RedShades: 48
-    - _Scroll: 0.014878653
+    - _Scroll: 0.012341045
     - _SrcBlend: 1
-    - _Stretching: 0.9606656
+    - _Stretching: 0.9639583
     - _UVSec: 0
     - _WarpIntensity: 0
     - _ZWrite: 1

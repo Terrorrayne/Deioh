@@ -4080,7 +4080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blendMode: 3
-  intensity: 0.1
+  intensity: 0.06
   texture: {fileID: 2800000, guid: fa05e82d6cbb8344fb43f8dff776bd88, type: 3}
   overlayShader: {fileID: 4800000, guid: 8c81db0e527d24acc9bcec04e87781bd, type: 3}
 --- !u!114 &114837567572934698
@@ -4431,7 +4431,7 @@ MonoBehaviour:
       outSlope: 0
       tangentMode: 34
     - serializedVersion: 2
-      time: 0.2
+      time: 0.3
       value: 0.5
       inSlope: 0
       outSlope: 0
@@ -4439,8 +4439,8 @@ MonoBehaviour:
     - serializedVersion: 2
       time: 1
       value: 0
-      inSlope: -0.87812275
-      outSlope: -0.87812275
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

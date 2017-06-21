@@ -10,12 +10,14 @@ public class PlayerItemUsage : MonoBehaviour
 	int[] equipItems = new int[3];
 	bool inventoryMenuOpen = false;
 
-	int PrimaryItem // primary item - sword
-	{ get { return equipItems[0]; } set { equipItems[0] = value; } }
-	int SecondaryItem // secondary item - shield - changes usage of primary in some way, or just does its own thing
-	{ get { return equipItems[1]; } set { equipItems[1] = value; } }
-	int UsableItem // usable - healthpack/consumable
-	{ get { return equipItems[2]; } set { equipItems[2] = value; } }
+	InventoryItem PrimaryItem // primary item - sword
+	{ get { return inventory.items[equipItems[0]]; } }
+	InventoryItem SecondaryItem // secondary item - shield - changes usage of primary in some way, or just does its own thing
+	{ get { return inventory.items[equipItems[1]]; } }
+	InventoryItem UsableItem // usable - healthpack/consumable
+	{ get { return inventory.items[equipItems[2]]; } }
+
+	ItemBehavior PrimaryEquip, SecondaryEquip, UsableEquip; // references to the actual items equipped in the game
 
 	Inventory inventory;
 
@@ -94,6 +96,10 @@ public class PlayerItemUsage : MonoBehaviour
 			inventoryMenuOpen = !inventoryMenuOpen;
 			itemWheel.gameObject.SetActive(inventoryMenuOpen);
 			equipWheel.gameObject.SetActive(inventoryMenuOpen);
+			if (!inventoryMenuOpen)
+			{
+				UpdateEquippedItems();
+			}
 		}
 
 		// if the menu is open, enable navigation controls
@@ -127,6 +133,11 @@ public class PlayerItemUsage : MonoBehaviour
 			itemWheel.localPosition = Vector3.up * currentItemSlot * 45;
 			equipWheel.localPosition = Vector3.left * currentEquipSlot * 60;
 
+		}
+
+		if (PrimaryEquip != null)
+		{
+			PrimaryEquip.PrimaryBehavior();
 		}
 	}
 
@@ -170,6 +181,37 @@ public class PlayerItemUsage : MonoBehaviour
 			{
 				equipImages[i].sprite = inventory.items[equipItems[i]].itemSprite;
 			}
+		}
+	}
+
+	public void UpdateEquippedItems()
+	{
+		// this swaps out equipped items so we can actually use them
+
+
+		// basic rule of this system, is instanciate new objects for each item, and let those objects handle everything they need to handle on their own
+		// just feed them input and nothing else
+
+		// remove equipped items
+
+		if (PrimaryEquip != null)
+		{
+			PrimaryEquip.RemoveSelf();
+		}
+		if (SecondaryEquip != null)
+		{
+			SecondaryEquip.RemoveSelf();
+		}
+		if (UsableEquip != null)
+		{
+			UsableEquip.RemoveSelf();
+		}
+
+		// then instanciate the new ones
+
+		if (PrimaryItem.equippablePrefab != null)
+		{
+			PrimaryEquip = Instantiate(PrimaryItem.equippablePrefab, transform.position, transform.rotation, transform).GetComponent<ItemBehavior>();
 		}
 	}
 }
