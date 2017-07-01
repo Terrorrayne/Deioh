@@ -6,7 +6,7 @@ public class IB_Sword : ItemBehavior
 
 	public Animator animator;
 
-	public override void EquipThisItem()
+	public override void EquipThisItem() // used for initialization of item
 	{
 		throw new NotImplementedException();
 	}

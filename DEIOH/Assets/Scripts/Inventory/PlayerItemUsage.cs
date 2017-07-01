@@ -209,9 +209,9 @@ public class PlayerItemUsage : MonoBehaviour
 
 		// then instanciate the new ones
 
-		if (PrimaryItem.equippablePrefab != null)
+		if (PrimaryItem.prefab != null)
 		{
-			PrimaryEquip = Instantiate(PrimaryItem.equippablePrefab, transform.position, transform.rotation, transform).GetComponent<ItemBehavior>();
+			PrimaryEquip = Instantiate(PrimaryItem.prefab, transform.position, transform.rotation, transform).GetComponent<ItemBehavior>();
 		}
 	}
 }

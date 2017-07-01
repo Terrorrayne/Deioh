@@ -51,13 +51,27 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 		}
 		else
 		{
-			if (absoluteHP < recoverableHP)
+			if (absoluteHP < recoverableHP) // recover hp, reduce stamina
 			{
 				float recovery = recoverySpeed / 60 * Time.deltaTime; // heal by recoverySpeed per minute
 				absoluteHP += recovery;
 
 				recoverableStamina -= recovery;
 				absoluteStamina -= recovery;
+			}
+			else if (recoverableStamina < maxStamina) // recover stamina
+			{
+				recoverableStamina += 8f / 60 * Time.deltaTime;
+			}
+
+			if (absoluteStamina < recoverableStamina)
+			{
+				absoluteStamina += 50 / 60 * Time.deltaTime;
+			}
+
+			if (recoverableHP < maxHitPoints && recoverableStamina >= maxStamina) // recover recoverableHP
+			{
+				recoverableHP += 8f / 60 * Time.deltaTime;
 			}
 
 		}
