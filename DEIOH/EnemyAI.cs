@@ -12,7 +12,7 @@ public class EnemyAI : MonoBehaviour
     Rigidbody theRigidBody;
     Renderer myRender;
 
-    //initilize
+    //nitilize
     void Start () {
         theRigidBody = GetComponent<>();
         myRender = GetComponent<>();
