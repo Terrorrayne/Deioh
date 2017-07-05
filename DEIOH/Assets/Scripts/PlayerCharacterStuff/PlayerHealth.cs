@@ -1,40 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour, IDamageable
+public class PlayerHealth : CharacterHealth
 {
-	public float maxHitPoints = 20f; // you a squishy bish
-	float recoverableHP = 20f;
-	float absoluteHP = 20;
-	public AnimationCurve aOverRCurve;
-
-	public float maxStamina = 100f;
-	float recoverableStamina = 100f;
-	float absoluteStamina = 100f;
-
-	public float recoverySpeed = 20; // hp/min
-
 	public Slider rHPSlider;
 	public Slider aHPSlider;
 	public Slider rStSlider;
 	public Slider aStSlider;
 	public variableframerate varfararaararrar;
-
-	public float RecoverableHP
-	{
-		get
-		{
-			return recoverableHP;
-		}
-	}
-
-	public float AbsoluteHP
-	{
-		get
-		{
-			return absoluteHP;
-		}
-	}
 
 	// Use this for initialization
 	void Start()
@@ -43,39 +16,9 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 	}
 
 	// Update is called once per frame
-	void Update()
+	public override void Update()
 	{
-		if (absoluteHP < 0)
-		{
-			Die();
-		}
-		else
-		{
-			if (absoluteHP < recoverableHP) // recover hp, reduce stamina
-			{
-				float recovery = recoverySpeed / 60 * Time.deltaTime; // heal by recoverySpeed per minute
-				absoluteHP += recovery;
-
-				recoverableStamina -= recovery;
-				absoluteStamina -= recovery;
-			}
-			else if (recoverableStamina < maxStamina) // recover stamina
-			{
-				recoverableStamina += 8f / 60 * Time.deltaTime;
-			}
-
-			if (absoluteStamina < recoverableStamina)
-			{
-				absoluteStamina += 50 / 60 * Time.deltaTime;
-			}
-
-			if (recoverableHP < maxHitPoints && recoverableStamina >= maxStamina) // recover recoverableHP
-			{
-				recoverableHP += 8f / 60 * Time.deltaTime;
-			}
-
-		}
-
+		base.Update();
 
 		rHPSlider.value = recoverableHP / maxHitPoints;
 		aHPSlider.value = absoluteHP / maxHitPoints;
@@ -85,34 +28,14 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 	}
 
 
-	public void Damage(float dmg)
+	public override void Damage(float dmg, Vector3 dir)
 	{
-
-		float recDmg = 0;
-
-		//// based off a-hp/r-hp
-		//recDmg = Mathf.Lerp(0.5f, 0.1f, absoluteHP / recoverableHP);
-		//recDmg *= dmg;
-
-		// based off r-st/max-st
-		//recDmg = 1 - (recoverableStamina / maxStamina);
-		//print(recDmg);
-		//recDmg *= dmg;
-
-		//absoluteHP -= dmg;
-		//recoverableHP -= recDmg;
-
-		// based off a-hp/r-hp, damage is applied accross both evenly
-		float absDmg = 0;
-		//recDmg = Mathf.Lerp(0.5f, 0, absoluteHP / recoverableHP);
-		recDmg = aOverRCurve.Evaluate(absoluteHP / recoverableHP);
-		absDmg = 1 - recDmg;
-
-		absoluteHP -= absDmg * dmg;
-		recoverableHP -= recDmg * dmg;
+		base.Damage(dmg, dir);
+		// knockback
+		GetComponent<CharacterMovement>().Knockback(dir.normalized * 20f);
 	}
 
-	public void Die()
+	public override void Die()
 	{
 		// when we die do a sequence of events
 		// oh i know. when you die:
@@ -128,5 +51,18 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 		{
 			recoverableHP -= 3 * Time.deltaTime;
 		}
+	}
+
+	public void DrainStamina(float stDrain, float wait = 0)
+	{
+		if (stDrain > absoluteStamina) // do the attack, but take away a portion of recoveryStamina
+		{
+			float penalty = stDrain - absoluteStamina;
+			recoverableStamina -= penalty * 0.2f;
+		}
+
+		absoluteStamina -= stDrain;
+		if (wait > stRecoveryWait) // wait a period of time before recovering
+			stRecoveryWait = wait;
 	}
 }

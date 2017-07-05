@@ -105,6 +105,8 @@ public class PlayerItemUsage : MonoBehaviour
 		// if the menu is open, enable navigation controls
 		if (inventoryMenuOpen)
 		{
+			UpdateInventoryImages();
+
 			Vector2 scroll = Input.mouseScrollDelta;
 			scroll.y = -scroll.y;
 			if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -138,6 +140,11 @@ public class PlayerItemUsage : MonoBehaviour
 		if (PrimaryEquip != null)
 		{
 			PrimaryEquip.PrimaryBehavior();
+		}
+
+		if (SecondaryEquip != null)
+		{
+			SecondaryEquip.SecondaryBehavior();
 		}
 	}
 
@@ -211,7 +218,22 @@ public class PlayerItemUsage : MonoBehaviour
 
 		if (PrimaryItem.prefab != null)
 		{
-			PrimaryEquip = Instantiate(PrimaryItem.prefab, transform.position, transform.rotation, transform).GetComponent<ItemBehavior>();
+			Transform targetTransform = GetComponent<CharacterMovement>().characterModel;
+			PrimaryEquip = Instantiate(PrimaryItem.prefab, targetTransform.position, targetTransform.rotation, targetTransform).GetComponent<ItemBehavior>();
+			PrimaryEquip.IsEquipped = true;
+			PrimaryEquip.EquipThisItem(gameObject);
 		}
+
+		if (SecondaryItem.prefab != null)
+		{
+			print("secondaryITEM");
+			Transform targetTransform = GetComponent<CharacterMovement>().characterModel;
+			SecondaryEquip = Instantiate(SecondaryItem.prefab, targetTransform.position, targetTransform.rotation, targetTransform).GetComponent<ItemBehavior>();
+			SecondaryEquip.IsEquipped = true;
+			SecondaryEquip.EquipThisItem(gameObject);
+		}
+
+		print("primary item: " + PrimaryItem.displayName + "\n" +
+			"secondary item: " + SecondaryItem.displayName);
 	}
 }

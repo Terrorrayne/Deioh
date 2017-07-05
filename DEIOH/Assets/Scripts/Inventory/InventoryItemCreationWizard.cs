@@ -135,7 +135,7 @@ public static class ScriptableObjectUtility
 	{
 		InventoryItem asset = ScriptableObject.CreateInstance<InventoryItem>();
 
-		string path = AssetDatabase.GetAssetPath(Selection.activeObject);
+		string path = "";//AssetDatabase.GetAssetPath(Selection.activeObject);
 		if (path == "")
 		{
 			path = "Assets/InventoryItems";

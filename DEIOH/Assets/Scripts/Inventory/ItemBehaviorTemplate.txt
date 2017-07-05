@@ -1,6 +1,6 @@
 ﻿ : ItemBehavior
 {
-	public override void EquipThisItem() // used for initialization of item
+	public override void EquipThisItem(GameObject characterUsingItem) // used for initialization of item
 	{
 		throw new NotImplementedException();
 	}

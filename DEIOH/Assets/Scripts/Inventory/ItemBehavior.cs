@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public abstract class ItemBehavior : MonoBehaviour, IButton
 {
@@ -7,13 +6,40 @@ public abstract class ItemBehavior : MonoBehaviour, IButton
 
 	public InventoryItem thisItem;
 
-	public abstract void EquipThisItem();
+	protected bool isEquipped = false;
+
+	public GameObject world;
+	public GameObject equip;
+	public Rigidbody myrigidbody;
+	public Collider mycollider;
+
+	public bool IsEquipped
+	{
+		get { return isEquipped; }
+
+		set
+		{
+			isEquipped = value;
+			world.SetActive(!isEquipped);
+			equip.SetActive(isEquipped);
+			myrigidbody.useGravity = !isEquipped;
+			mycollider.enabled = !isEquipped;
+		}
+	}
+
+	public abstract void EquipThisItem(GameObject characterUsingItem);
 
 	public abstract void PrimaryBehavior();
 
 	public abstract void SecondaryBehavior();
 
 	public abstract void UsableBehavior();
+
+	public virtual void Start()
+	{
+
+		IsEquipped = IsEquipped;
+	}
 
 	public virtual void RemoveSelf()
 	{
@@ -22,11 +48,15 @@ public abstract class ItemBehavior : MonoBehaviour, IButton
 
 	public void ButtonPress(PlayerButtonInteraction player)
 	{
-		throw new NotImplementedException();
+		if (!IsEquipped)
+			player.GetComponent<Inventory>().AddItem(thisItem);
+		Destroy(gameObject);
 	}
 
 	public bool ButtonIsActive()
 	{
-		throw new NotImplementedException();
+		return true;
 	}
+
+
 }

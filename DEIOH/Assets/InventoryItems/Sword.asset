@@ -13,9 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Sword
   itemSprite: {fileID: 21300000, guid: ebe73bf1ab2c6d640b52f796376367d2, type: 3}
-  usableItem: 0
-  equippableItem: 0
-  worldPrefab: {fileID: 0}
-  itemScript: {fileID: 0}
-  equippablePrefab: {fileID: 1724423959765216, guid: ddfcc5931310ab74c89ffb35574e3782,
-    type: 2}
+  prefab: {fileID: 1724423959765216, guid: ddfcc5931310ab74c89ffb35574e3782, type: 2}

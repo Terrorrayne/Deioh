@@ -23,6 +23,8 @@ public class Inventory : MonoBehaviour
 				return;
 			}
 		}
+
+		GetComponent<PlayerItemUsage>().UpdateInventoryImages();
 	}
 	public void RemoveItem(InventoryItem itemToRemove)
 	{
@@ -34,5 +36,7 @@ public class Inventory : MonoBehaviour
 				return;
 			}
 		}
+
+		GetComponent<PlayerItemUsage>().UpdateInventoryImages();
 	}
 }
