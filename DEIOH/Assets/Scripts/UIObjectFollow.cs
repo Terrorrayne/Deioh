@@ -6,7 +6,7 @@ public class UIObjectFollow : MonoBehaviour
 
 	public Transform objToFollow;
 	public float lerpSpd = 7.5f;
-
+	public Vector2 offset = Vector2.zero;
 
 
 	private void LateUpdate()
@@ -14,6 +14,7 @@ public class UIObjectFollow : MonoBehaviour
 		if (objToFollow != null)
 		{
 			Vector3 screenPoint = Camera.main.WorldToScreenPoint(objToFollow.position);
+			screenPoint += (Vector3)offset;
 			transform.position = Vector3.Lerp(transform.position, screenPoint, lerpSpd * Time.deltaTime);
 
 		}

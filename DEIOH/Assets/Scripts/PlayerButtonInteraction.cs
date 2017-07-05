@@ -48,7 +48,7 @@ public class PlayerButtonInteraction : MonoBehaviour
 
 			if (Progress == 1)
 			{
-				col[0].GetComponent<IButton>().ButtonPress();
+				col[0].GetComponent<IButton>().ButtonPress(this);
 				Progress = 0;
 			}
 		}
