@@ -588,14 +588,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-<<<<<<< HEAD
   cloudProjectId: 75e546b7-2124-4c38-b9de-48792281bc8f
   projectName: DEIOH (1)
   organizationId: terrorrayne
-=======
-  cloudProjectId: c1c2db41-1554-4222-ac5b-12092ae10c7d
-  projectName: DEIOH
-  organizationId: zold2012
->>>>>>> inventory-and-weapons-systems
   cloudEnabled: 0
   enableNewInputSystem: 0

@@ -13,18 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 8
-    y: 51
-    width: 1350
-    height: 709
+    x: 0
+    y: 43
+    width: 1920
+    height: 1037
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-<<<<<<< HEAD
-  m_MinSize: {x: 950, y: 492}
-=======
-  m_MinSize: {x: 950, y: 495}
->>>>>>> inventory-and-weapons-systems
+  m_MinSize: {x: 950, y: 442}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,9 +41,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1350
-    height: 709
-  m_MinSize: {x: 950, y: 492}
+    width: 1920
+    height: 1037
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -65,11 +61,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1350
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: 
+  m_LastLoadedLayoutName: MyLayout
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -85,8 +81,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 689
-    width: 1350
+    y: 1017
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -109,21 +105,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-<<<<<<< HEAD
-    width: 1350
-    height: 659
-  m_MinSize: {x: 911, y: 442}
-  m_MaxSize: {x: 22006, y: 14021}
-  vertical: 0
-  controlID: 57
-=======
     width: 1920
     height: 987
-  m_MinSize: {x: 911, y: 445}
-  m_MaxSize: {x: 22006, y: 14021}
+  m_MinSize: {x: 917, y: 392}
+  m_MaxSize: {x: 22012, y: 14042}
   vertical: 0
-  controlID: 76330
->>>>>>> inventory-and-weapons-systems
+  controlID: 293
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,21 +129,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 572
-    height: 659
-  m_MinSize: {x: 202, y: 442}
+    width: 1017
+    height: 987
+  m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 58
-=======
-    width: 982
-    height: 987
-  m_MinSize: {x: 202, y: 445}
-  m_MaxSize: {x: 4002, y: 8045}
-  vertical: 1
-  controlID: 76331
->>>>>>> inventory-and-weapons-systems
+  controlID: 294
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,23 +151,18 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 572
-    height: 278
-=======
-    width: 982
-    height: 404
->>>>>>> inventory-and-weapons-systems
-  m_MinSize: {x: 200, y: 200}
+    width: 1017
+    height: 382
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 18}
   m_Panes:
+  - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
-  - {fileID: 20}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -205,27 +178,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 278
-    width: 572
-    height: 381
-=======
-    y: 404
-    width: 982
-    height: 583
->>>>>>> inventory-and-weapons-systems
+    y: 382
+    width: 1017
+    height: 605
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 15}
   m_Panes:
-<<<<<<< HEAD
-  - {fileID: 16}
-=======
   - {fileID: 15}
   - {fileID: 20}
->>>>>>> inventory-and-weapons-systems
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 0
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -242,25 +205,14 @@ MonoBehaviour:
   - {fileID: 13}
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 572
+    x: 1017
     y: 0
-    width: 501
-    height: 659
-  m_MinSize: {x: 434, y: 371}
-  m_MaxSize: {x: 14004, y: 14021}
-  vertical: 1
-  controlID: 155
-=======
-    x: 982
-    y: 0
-    width: 558
+    width: 517
     height: 987
-  m_MinSize: {x: 434, y: 371}
-  m_MaxSize: {x: 14004, y: 14021}
+  m_MinSize: {x: 438, y: 392}
+  m_MaxSize: {x: 14008, y: 14042}
   vertical: 1
-  controlID: 76271
->>>>>>> inventory-and-weapons-systems
+  controlID: 164
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -279,21 +231,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 501
-    height: 440
-  m_MinSize: {x: 434, y: 271}
-  m_MaxSize: {x: 14004, y: 10021}
+    width: 517
+    height: 731
+  m_MinSize: {x: 438, y: 271}
+  m_MaxSize: {x: 14008, y: 10021}
   vertical: 0
-  controlID: 156
-=======
-    width: 558
-    height: 703
-  m_MinSize: {x: 434, y: 271}
-  m_MaxSize: {x: 14004, y: 10021}
-  vertical: 0
-  controlID: 76272
->>>>>>> inventory-and-weapons-systems
+  controlID: 199
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -310,15 +253,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 229
-    height: 440
-=======
-    width: 209
-    height: 703
->>>>>>> inventory-and-weapons-systems
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 241
+    height: 731
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -338,17 +276,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 229
+    x: 241
     y: 0
-    width: 272
-    height: 440
-=======
-    x: 209
-    y: 0
-    width: 349
-    height: 703
->>>>>>> inventory-and-weapons-systems
+    width: 276
+    height: 731
   m_MinSize: {x: 234, y: 271}
   m_MaxSize: {x: 10004, y: 10021}
   m_ActualView: {fileID: 22}
@@ -371,17 +302,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 440
-    width: 501
-    height: 219
-=======
-    y: 703
-    width: 558
-    height: 284
->>>>>>> inventory-and-weapons-systems
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+    y: 731
+    width: 517
+    height: 256
+  m_MinSize: {x: 104, y: 121}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -401,65 +326,20 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 1073
+    x: 1534
     y: 0
-    width: 277
-    height: 659
-=======
-    x: 1540
-    y: 0
-    width: 380
+    width: 386
     height: 987
->>>>>>> inventory-and-weapons-systems
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
   - {fileID: 25}
   - {fileID: 26}
-<<<<<<< HEAD
-  - {fileID: 15}
-=======
-  - {fileID: 27}
->>>>>>> inventory-and-weapons-systems
   m_Selected: 0
-  m_LastSelected: 3
+  m_LastSelected: 0
 --- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12157, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 0
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Services
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_DepthBufferBits: 0
-  m_Pos:
-    serializedVersion: 2
-    x: 1083
-    y: 100
-    width: 275
-    height: 638
-  m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
-  m_GlobalObjectTypeName: 
-  m_RegisteredViewURLs:
-  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
-  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/analytics
-  m_RegisteredViewInstances:
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -481,17 +361,10 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 8
-    y: 378
-    width: 570
-    height: 360
-=======
     x: 0
-    y: 496
-    width: 980
-    height: 562
->>>>>>> inventory-and-weapons-systems
+    y: 474
+    width: 1015
+    height: 584
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
@@ -500,17 +373,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-<<<<<<< HEAD
-    m_HBaseRangeMin: -285
-    m_HBaseRangeMax: 285
-    m_VBaseRangeMin: -171.5
-    m_VBaseRangeMax: 171.5
-=======
-    m_HBaseRangeMin: -490
-    m_HBaseRangeMax: 490
-    m_VBaseRangeMin: -272.5
-    m_VBaseRangeMax: 272.5
->>>>>>> inventory-and-weapons-systems
+    m_HBaseRangeMin: -507.5
+    m_HBaseRangeMax: 507.5
+    m_VBaseRangeMin: -283.5
+    m_VBaseRangeMax: 283.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -527,47 +393,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-<<<<<<< HEAD
-      width: 570
-      height: 343
+      width: 1015
+      height: 567
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 285, y: 171.5}
-=======
-      width: 980
-      height: 545
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 490, y: 272.5}
->>>>>>> inventory-and-weapons-systems
+    m_Translation: {x: 507.5, y: 283.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< HEAD
-      x: -285
-      y: -171.5
-      width: 570
-      height: 343
-=======
-      x: -490
-      y: -272.5
-      width: 980
-      height: 545
->>>>>>> inventory-and-weapons-systems
+      x: -507.5
+      y: -283.5
+      width: 1015
+      height: 567
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-<<<<<<< HEAD
-  m_LastWindowPixelSize: {x: 570, y: 360}
-=======
-  m_LastWindowPixelSize: {x: 980, y: 562}
->>>>>>> inventory-and-weapons-systems
+  m_LastWindowPixelSize: {x: 1015, y: 584}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
---- !u!114 &17
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -589,109 +437,65 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 8
-    y: 100
-    width: 570
-    height: 257
-  m_SceneLighting: 1
-  lastFramingTime: 52867.055759040224
-=======
     x: 0
     y: 92
-    width: 980
-    height: 383
-  m_SceneLighting: 0
-  lastFramingTime: 185737.82735564318
->>>>>>> inventory-and-weapons-systems
-  m_2DMode: 0
+    width: 693
+    height: 472
+  m_SceneLighting: 1
+  lastFramingTime: 145.6536559569488
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -11.304453, y: -1.6651878, z: -1.398726}
+    m_Target: {x: 126.00211, y: -58.678856, z: -76.30764}
     speed: 2
-    m_Value: {x: -11.304453, y: -1.6651878, z: -1.398726}
+    m_Value: {x: 126.00211, y: -58.678856, z: -76.30764}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
-    showFog: 0
+    showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 0
-    showFlares: 0
-    showImageEffects: 0
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
   grid:
     xGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
+      m_Target: 0
       speed: 2
-      m_Value: 1
+      m_Value: 0
     zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.13032453, y: 0.7505004, z: -0.15551034, w: -0.62895256}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0.13032453, y: 0.7505004, z: -0.15551034, w: -0.62895256}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-<<<<<<< HEAD
-    m_Target: 1810.459
+    m_Target: 289.6271
     speed: 2
-    m_Value: 1810.459
-=======
-    m_Target: 16.651041
-    speed: 2
-    m_Value: 16.651041
->>>>>>> inventory-and-weapons-systems
+    m_Value: 289.6271
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
-  m_LastSceneViewRotation: {x: -0.15768601, y: 0.8421576, z: -0.37337366, w: -0.35566548}
+    m_Value: 1
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &18
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-<<<<<<< HEAD
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 0
-  m_MinSize: {x: 400, y: 100}
-  m_MaxSize: {x: 2048, y: 2048}
-  m_TitleContent:
-    m_Text: Asset Store
-    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_DepthBufferBits: 0
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 92
-    width: 831
-    height: 395
---- !u!114 &19
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-=======
->>>>>>> inventory-and-weapons-systems
   m_EditorHideFlags: 0
   m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -709,20 +513,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
-    width: 1059
-    height: 476
+    width: 693
+    height: 472
   m_ViewPositions:
-    m_KeySerializationHelper:
-    - {fileID: 1107255671467520292, guid: 71889b54bd8a9284ebcfaf2f18c28121, type: 2}
-    m_ValueSerializationHelper:
-    - {x: 599.4, y: 279.2}
+    m_KeySerializationHelper: []
+    m_ValueSerializationHelper: []
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 71889b54bd8a9284ebcfaf2f18c28121,
-    type: 2}
-  m_BreadCrumbs:
-  - m_Target: {fileID: 1107255671467520292, guid: 71889b54bd8a9284ebcfaf2f18c28121,
-      type: 2}
-    m_ScrollPosition: {x: 0, y: 0}
+  m_AnimatorController: {fileID: 0}
+  m_BreadCrumbs: []
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
   blendTreeGraph: {fileID: 0}
@@ -731,12 +529,9 @@ MonoBehaviour:
   m_LiveLinkFollowTransitions: 0
   m_MiniTool: 0
   m_SerializedLocked: 0
-  m_CurrentEditor: 1
+  m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
-<<<<<<< HEAD
---- !u!114 &20
-=======
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -761,7 +556,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
-    width: 930
+    width: 1015
     height: 361
   m_MixersTreeState:
     scrollPos: {x: 0, y: 0}
@@ -837,16 +632,16 @@ MonoBehaviour:
       splitSize: 6
       xOffset: 0
     m_HorizontalSplitter:
-      ID: 16533
+      ID: 324
       splitterInitialOffset: 0
       currentActiveSplitter: -1
-      realSizes: 170100008c020000
+      realSizes: 31010000c7020000
       relativeSizes:
       - 0.3
       - 0.7
       minSizes: a0000000a0000000
       maxSizes: 0000000000000000
-      lastTotalSize: 931
+      lastTotalSize: 1016
       splitSize: 6
       xOffset: -1
   m_SectionOrder: 00000000030000000100000002000000
@@ -856,7 +651,6 @@ MonoBehaviour:
   m_ShowBusConnections: 0
   m_ShowBusConnectionsOfSelection: 0
 --- !u!114 &19
->>>>>>> inventory-and-weapons-systems
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -880,8 +674,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
-    width: 930
-    height: 361
+    width: 693
+    height: 472
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -904,10 +698,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 589
-    width: 976
-    height: 469
+    x: -1920
+    y: 603
+    width: 906
+    height: 455
   m_AnimEditor: {fileID: 0}
   m_Locked: 0
 --- !u!114 &21
@@ -932,45 +726,34 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 582
-    y: 100
-    width: 225
-    height: 419
-=======
-    x: 984
+    x: 1019
     y: 92
-    width: 205
-    height: 682
->>>>>>> inventory-and-weapons-systems
+    width: 237
+    height: 710
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: c0520000
     m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: c8fbffff00000000
-=======
-    m_ExpandedIDs: 6a80e6ff7680e6ff860cecff5ad7efff6ed7effffecbf3ff02ccf3ffd4d6f3ffe2d7f3ff7ed8f3ff6034f4ff083bf4ff983cf4ff32ecfcff36ecfcff3aecfcff3cecfcff3eecfcff4cecfcff56ecfcff5eecfcff60ecfcff6cecfcff76ecfcff78ecfcff86ecfcff8aecfcff8eecfcff06ceffffaaf8ffffb4f8fffffef8ffff0cf9ffff24f9ffff4ef9ffff54f9ffff76f9ffff10faffff14faffff2cfaffff32faffff4efaffff9cfaffff30fbffff32fbffffdcfbffff0000000082380000
->>>>>>> inventory-and-weapons-systems
+    m_ExpandedIDs: d8caffffb2ceffff22fcffff00000000202c0000422c0000722c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: door2
-      m_OriginalName: door2
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 14356
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
   m_ExpandedScenes:
-  - deioh
+  - FeatureTestScene01
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -996,17 +779,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 811
-    y: 100
-    width: 268
-    height: 419
-=======
-    x: 1193
+    x: 1260
     y: 92
-    width: 345
-    height: 682
->>>>>>> inventory-and-weapons-systems
+    width: 272
+    height: 710
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -1018,34 +794,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-<<<<<<< HEAD
     - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Scenes
-=======
-    - Assets/Prefabs/Items
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Prefabs/Items
->>>>>>> inventory-and-weapons-systems
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\ZERO-BOXX\Documents\GitHub\Deioh\DEIOH
+  m_LastProjectPath: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH
   m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 2}
-    m_SelectedIDs: 222f0000
-    m_LastClickedID: 12066
-    m_ExpandedIDs: 00000000f42b0000d82f000092300000c83200006c3300000e35000040350000ffffff7f
-=======
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 782f0000
-    m_LastClickedID: 12152
-    m_ExpandedIDs: 00000000102c00005a2e0000622e0000682e0000702f0000e42f0000e6310000be3200007033000072330000fe3300001635000046350000e436000000ca9a3bffffff7f
->>>>>>> inventory-and-weapons-systems
+    m_SelectedIDs: 9e4e0000
+    m_LastClickedID: 20126
+    m_ExpandedIDs: 00000000c04b0000464f0000de4f0000c25100004a520000c2530000f053000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1061,7 +822,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 0}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1073,11 +834,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000f42b0000d82f000092300000c83200006c3300000e35000040350000
-=======
-    m_ExpandedIDs: 00000000102c00005a2e0000622e0000682e0000702f0000e42f0000e6310000be3200007033000072330000fe3300001635000046350000e436000000ca9a3bffffff7f
->>>>>>> inventory-and-weapons-systems
+    m_ExpandedIDs: 00000000c04b0000464f0000de4f0000c25100004a520000c2530000f053000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1104,13 +861,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-<<<<<<< HEAD
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 42300000000000001a3400005c3b0100
-=======
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 5483feff2a2800009078000098780000947800008a2d0000a2710000f2360000c03effff9a3200000000000056330000a22d0000
->>>>>>> inventory-and-weapons-systems
+    m_ExpandedInstanceIDs: 5483feff2a280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1136,11 +888,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
-<<<<<<< HEAD
-  m_DirectoriesAreaWidth: 116
-=======
-  m_DirectoriesAreaWidth: 167
->>>>>>> inventory-and-weapons-systems
+  m_DirectoriesAreaWidth: 110
 --- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1163,17 +911,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 582
-    y: 540
-    width: 497
-    height: 198
-=======
-    x: 984
-    y: 795
-    width: 554
-    height: 263
->>>>>>> inventory-and-weapons-systems
+    x: 1019
+    y: 823
+    width: 513
+    height: 235
 --- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1196,17 +937,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 1083
-    y: 100
-    width: 275
-    height: 638
-=======
-    x: 1542
+    x: 1536
     y: 92
-    width: 378
+    width: 384
     height: 966
->>>>>>> inventory-and-weapons-systems
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
@@ -1236,10 +970,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1538
-    y: 92
-    width: 382
-    height: 966
+    x: -429
+    y: 101
+    width: 429
+    height: 957
 --- !u!114 &26
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1262,44 +996,7 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1538
-    y: 92
-    width: 382
-    height: 966
---- !u!114 &27
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12157, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 0
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Services
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_DepthBufferBits: 0
-  m_Pos:
-    serializedVersion: 2
-    x: 1645
-    y: 92
-    width: 275
-    height: 966
-  m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
-  m_GlobalObjectTypeName: 
-  m_RegisteredViewURLs:
-  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
-  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/analytics
-  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/collab
-  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/unet
-  m_RegisteredViewInstances:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+    x: -429
+    y: 101
+    width: 429
+    height: 957
