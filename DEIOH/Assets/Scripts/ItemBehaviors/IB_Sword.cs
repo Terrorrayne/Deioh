@@ -35,7 +35,7 @@ public class IB_Sword : ItemBehavior
 				for (int i = 0; i < hitObj.Length; i++)
 				{
 					Vector3 dir = hitObj[i].transform.position - transform.position;
-					hitObj[i].GetComponent<IDamageable>().Damage(damage, dir);
+					hitObj[i].GetComponent<IDamageable>().Damage(damage, dir, dir);
 				}
 
 

@@ -8,6 +8,8 @@ public class IB_Shield : ItemBehavior
 	public override void EquipThisItem(GameObject characterUsingItem)
 	{
 		myMovement = characterUsingItem.GetComponent<CharacterMovement>();
+		shieldGFX.enabled = false;
+
 	}
 
 	public override void PrimaryBehavior()

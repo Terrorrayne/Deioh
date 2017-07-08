@@ -29,7 +29,7 @@ public class BulletScript : MonoBehaviour
 			Vector3 dir = other.transform.position - transform.position;
 			dir.Normalize();
 
-			whatsYourDamage.Damage(damageToInflict, transform.forward + dir);
+			whatsYourDamage.Damage(damageToInflict, transform.forward + dir, transform.position);
 		}
 
 		Destroy(gameObject);

@@ -6,6 +6,6 @@ public class DamageArea : MonoBehaviour
 
 	private void OnTriggerStay(Collider other)
 	{
-		other.GetComponent<IDamageable>().Damage(damage * Time.deltaTime, Vector3.zero);
+		other.GetComponent<IDamageable>().Damage(damage * Time.deltaTime, Vector3.zero, Vector3.zero);
 	}
 }

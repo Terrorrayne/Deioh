@@ -28,11 +28,11 @@ public class PlayerHealth : CharacterHealth
 	}
 
 
-	public override void Damage(float dmg, Vector3 dir)
+	public override void Damage(float dmg, Vector3 pushDir, Vector3 atkPos)
 	{
-		base.Damage(dmg, dir);
+		base.Damage(dmg, pushDir, atkPos);
 		// knockback
-		GetComponent<CharacterMovement>().Knockback(dir.normalized * 20f);
+		GetComponent<CharacterMovement>().Knockback(pushDir.normalized * 20f);
 	}
 
 	public override void Die()

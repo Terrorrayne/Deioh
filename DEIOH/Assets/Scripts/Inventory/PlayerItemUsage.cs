@@ -216,21 +216,28 @@ public class PlayerItemUsage : MonoBehaviour
 
 		// then instanciate the new ones
 
-		if (PrimaryItem.prefab != null)
+		if (PrimaryItem != null) // do we have an item
 		{
-			Transform targetTransform = GetComponent<CharacterMovement>().characterModel;
-			PrimaryEquip = Instantiate(PrimaryItem.prefab, targetTransform.position, targetTransform.rotation, targetTransform).GetComponent<ItemBehavior>();
-			PrimaryEquip.IsEquipped = true;
-			PrimaryEquip.EquipThisItem(gameObject);
+			if (PrimaryItem.prefab != null) // does the item have a prefab
+			{
+				Transform targetTransform = GetComponent<CharacterMovement>().characterModel;
+				PrimaryEquip = Instantiate(PrimaryItem.prefab, targetTransform.position, targetTransform.rotation, targetTransform).GetComponent<ItemBehavior>();
+				PrimaryEquip.IsEquipped = true;
+				PrimaryEquip.EquipThisItem(gameObject);
+			}
 		}
 
-		if (SecondaryItem.prefab != null)
+		if (SecondaryItem != null)
 		{
-			print("secondaryITEM");
-			Transform targetTransform = GetComponent<CharacterMovement>().characterModel;
-			SecondaryEquip = Instantiate(SecondaryItem.prefab, targetTransform.position, targetTransform.rotation, targetTransform).GetComponent<ItemBehavior>();
-			SecondaryEquip.IsEquipped = true;
-			SecondaryEquip.EquipThisItem(gameObject);
+			if (SecondaryItem.prefab != null)
+			{
+				print("secondaryITEM");
+				Transform targetTransform = GetComponent<CharacterMovement>().characterModel;
+				SecondaryEquip = Instantiate(SecondaryItem.prefab, targetTransform.position, targetTransform.rotation, targetTransform).GetComponent<ItemBehavior>();
+				SecondaryEquip.IsEquipped = true;
+				SecondaryEquip.EquipThisItem(gameObject);
+			}
+
 		}
 
 		print("primary item: " + PrimaryItem.displayName + "\n" +

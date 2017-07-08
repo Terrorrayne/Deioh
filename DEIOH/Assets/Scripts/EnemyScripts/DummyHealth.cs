@@ -19,13 +19,13 @@ public class DummyHealth : CharacterHealth
 		transform.position = Vector3.Lerp(transform.position, startpos, 10f * Time.deltaTime);
 	}
 
-	public override void Damage(float dmg, Vector3 dir)
+	public override void Damage(float dmg, Vector3 pushDir, Vector3 atkPos)
 	{
-		base.Damage(dmg, dir);
+		base.Damage(dmg, pushDir, atkPos);
 		print(dmg);
 		myMat.color = Color.red;
 
 		// recoil
-		transform.position += dir.normalized * dmg * 0.1f;
+		transform.position += pushDir.normalized * dmg * 0.1f;
 	}
 }

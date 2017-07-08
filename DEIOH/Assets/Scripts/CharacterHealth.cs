@@ -66,7 +66,7 @@ public class CharacterHealth : MonoBehaviour, IDamageable
 		}
 	}
 
-	public virtual void Damage(float dmg, Vector3 dir)
+	public virtual void Damage(float dmg, Vector3 pushDir, Vector3 atkPos)
 	{
 		float recDmg = 0;
 
