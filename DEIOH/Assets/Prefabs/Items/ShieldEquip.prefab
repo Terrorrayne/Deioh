@@ -70,6 +70,8 @@ GameObject:
   - component: {fileID: 4909160846461060}
   - component: {fileID: 33685022476701212}
   - component: {fileID: 23521006927507182}
+  - component: {fileID: 135334286227288410}
+  - component: {fileID: 114848651537292270}
   m_Layer: 0
   m_Name: WorldModelShield Yay
   m_TagString: Untagged
@@ -140,7 +142,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1129556312749762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.21, y: 2.45, z: 6.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4567815857211294}
@@ -244,6 +246,39 @@ MonoBehaviour:
   myrigidbody: {fileID: 54660458671305298}
   mycollider: {fileID: 65254414768258886}
   shieldGFX: {fileID: 23521006927507182}
+--- !u!114 &114848651537292270
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730407649185546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef49bf768c867c44d831253e57f2b1a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHitPoints: 20
+  aOverRCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  maxStamina: 100
+  recoverySpeed: 20
+  stRecoveryWait: 0
+--- !u!135 &135334286227288410
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730407649185546}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &212657288785118280
 SpriteRenderer:
   m_ObjectHideFlags: 1

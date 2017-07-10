@@ -17,6 +17,8 @@ ModelImporter:
     100018: Cube_003
     100020: Cylinder
     100022: Plane_004
+    100024: Plane_005
+    100026: Plane_006
     400000: Cube
     400002: Cube_001
     400004: Cube_002
@@ -29,6 +31,8 @@ ModelImporter:
     400018: Cube_003
     400020: Cylinder
     400022: Plane_004
+    400024: Plane_005
+    400026: Plane_006
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
@@ -40,6 +44,8 @@ ModelImporter:
     2300016: Cube_003
     2300018: Cylinder
     2300020: Plane_004
+    2300022: Plane_005
+    2300024: Plane_006
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -51,6 +57,8 @@ ModelImporter:
     3300016: Cube_003
     3300018: Cylinder
     3300020: Plane_004
+    3300022: Plane_005
+    3300024: Plane_006
     4300000: Plane_003
     4300002: Plane_002
     4300004: Plane_001
@@ -62,6 +70,21 @@ ModelImporter:
     4300016: Cube_003
     4300018: Cylinder
     4300020: Plane_004
+    4300022: Plane_005
+    4300024: Plane_006
+    6400000: Cube
+    6400002: Cube_001
+    6400004: Cube_002
+    6400006: Cube_003
+    6400008: Cylinder
+    6400010: Plane
+    6400012: Plane_001
+    6400014: Plane_002
+    6400016: Plane_003
+    6400018: Plane_004
+    6400020: Sphere
+    6400022: Plane_005
+    6400024: Plane_006
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -92,10 +115,10 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -109,7 +132,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
@@ -125,10 +148,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
