@@ -6,3 +6,7 @@ debug invincible - player cannot die/take damage
 debug freelook - camera is separated from the player, can move around 
 debug god - idk
 disable postprocess - disables post processing effects on camera
+pause - halt gamelogic, timescale = 0
+
+options to disable post process, view post process stack
+interface to view Scene Hierarchy, select gameobjects, view and edit components of selected gameobect

@@ -11,6 +11,7 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -65,7 +66,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EmissionScaleUI: 0
-    - _GammaCorrection: 0.80000955
+    - _GammaCorrection: 0.80148077
     - _Glossiness: 0.5
     - _GreenBits: 3
     - _GreenShades: 48
@@ -76,9 +77,9 @@ Material:
     - _Parallax: 0.02
     - _RedBits: 3
     - _RedShades: 48
-    - _Scroll: 0.014999048
+    - _Scroll: 0.014851927
     - _SrcBlend: 1
-    - _Stretching: 0.9622748
+    - _Stretching: 0.9604992
     - _UVSec: 0
     - _WarpIntensity: 0
     - _ZWrite: 1
