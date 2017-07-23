@@ -2,50 +2,50 @@
 
 public class CharacterHealth : MonoBehaviour, IDamageable
 {
-	public float maxHitPoints = 20f; // you a squishy bish
-	protected float recoverableHP = 20f;
-	protected float absoluteHP = 20;
-	public AnimationCurve aOverRCurve;
+	public float startingHP = 20f; // you a squishy bish
+	protected float maximumHP = 20f;
+	protected float currentHP = 20;
+	public AnimationCurve cOverMCurve;
 
-	public float maxStamina = 100f;
-	protected float recoverableStamina = 100f;
-	protected float absoluteStamina = 100f;
+	public float startingStamina = 100f;
+	protected float maximumStamina = 100f;
+	protected float currentStamina = 100f;
 
 	public float recoverySpeed = 20; // hp/min
 
-	public float RecoverableHP { get { return recoverableHP; } }
+	public float MaximumHP { get { return maximumHP; } }
 
-	public float AbsoluteHP { get { return absoluteHP; } }
+	public float CurrentHP { get { return currentHP; } }
 
-	public bool StaminaReady { get { return absoluteStamina > 0; } }
+	public bool StaminaReady { get { return currentStamina > 0; } }
 
-	public float AbsoluteStamina { get { return absoluteStamina; } }
+	public float CurrentStamina { get { return currentStamina; } }
 
 	public float stRecoveryWait = 0;
 
 	// Update is called once per frame
 	public virtual void Update()
 	{
-		if (absoluteHP < 0)
+		if (currentHP < 0)
 		{
 			Die();
 		}
 		else
 		{
-			if (absoluteHP < recoverableHP) // recover hp, reduce stamina
+			if (currentHP < maximumHP) // recover hp, reduce stamina
 			{
 				float recovery = recoverySpeed / 60 * Time.deltaTime; // heal by recoverySpeed per minute
-				absoluteHP += recovery;
+				currentHP += recovery;
 
-				recoverableStamina -= recovery;
-				absoluteStamina -= recovery;
+				maximumStamina -= recovery;
+				currentStamina -= recovery;
 			}
-			else if (recoverableStamina < maxStamina) // recover stamina
+			else if (maximumStamina < startingStamina) // recover stamina
 			{
-				recoverableStamina += 20f / 60 * Time.deltaTime;
+				maximumStamina += 20f / 60 * Time.deltaTime;
 			}
 
-			if (absoluteStamina < recoverableStamina)
+			if (currentStamina < maximumStamina)
 			{
 				if (stRecoveryWait > 0)
 				{
@@ -53,14 +53,14 @@ public class CharacterHealth : MonoBehaviour, IDamageable
 				}
 				else
 				{
-					absoluteStamina += 1800f / 60 * Time.deltaTime;
+					currentStamina += 1800f / 60 * Time.deltaTime;
 
 				}
 			}
 
-			if (recoverableHP < maxHitPoints && recoverableStamina >= maxStamina) // recover recoverableHP
+			if (maximumHP < startingHP && maximumStamina >= startingStamina) // recover recoverableHP
 			{
-				recoverableHP += 8f / 60 * Time.deltaTime;
+				maximumHP += 8f / 60 * Time.deltaTime;
 			}
 
 		}
@@ -85,11 +85,11 @@ public class CharacterHealth : MonoBehaviour, IDamageable
 		// based off a-hp/r-hp, damage is applied accross both evenly
 		float absDmg = 0;
 		//recDmg = Mathf.Lerp(0.5f, 0, absoluteHP / recoverableHP);
-		recDmg = aOverRCurve.Evaluate(absoluteHP / recoverableHP);
+		recDmg = cOverMCurve.Evaluate(currentHP / maximumHP);
 		absDmg = 1 - recDmg;
 
-		absoluteHP -= absDmg * dmg;
-		recoverableHP -= recDmg * dmg;
+		currentHP -= absDmg * dmg;
+		maximumHP -= recDmg * dmg;
 	}
 
 	public virtual void Die()
