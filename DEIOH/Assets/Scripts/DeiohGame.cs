@@ -4,7 +4,10 @@ public class DeiohGame : MonoBehaviour
 {
 	// omg this acts as a manager for everything everywhere ever in DEIOH whatever DEIOH turns out to be
 
-	DeiohGame self;
+	public static DeiohGame self;
+
+	public PlayableCharacter player; // which game is the player in control of
+	public BasicFollowCam gameCamera; // camera that follows the player
 
 	// Use this for initialization
 	void Start()

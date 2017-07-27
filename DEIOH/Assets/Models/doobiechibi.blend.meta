@@ -45,6 +45,47 @@ ModelImporter:
     100074: Cylinder_014
     100076: Cylinder_015
     100078: Icosphere_001
+    100080: Cylinder_000
+    100082: Cylinder_016
+    100084: origin_002
+    100086: Cube_017
+    100088: Cube_018
+    100090: Cube_019
+    100092: Cube_020
+    100094: Cube_021
+    100096: Cylinder_017
+    100098: Cylinder_018
+    100100: Cylinder_019
+    100102: Cylinder_020
+    100104: Cylinder_021
+    100106: Cylinder_022
+    100108: Icosphere_002
+    100110: Cube_022
+    100112: Cube_023
+    100114: Cube_024
+    100116: Cube_025
+    100118: Cube_026
+    100120: Cube_027
+    100122: Cube_028
+    100124: Cylinder_023
+    100126: Cylinder_024
+    100128: Cylinder_025
+    100130: Cylinder_026
+    100132: Cylinder_027
+    100134: Cylinder_028
+    100136: Cylinder_029
+    100138: Cylinder_030
+    100140: Cylinder_031
+    100142: Cylinder_032
+    100144: Cylinder_033
+    100146: Cylinder_034
+    100148: Icosphere_003
+    100150: origin_004
+    100152: Cube_029
+    100154: Cube_030
+    100156: Cube_031
+    100158: Cube_032
+    100160: Cube_033
     400000: //RootNode
     400002: Cube
     400004: Cube_001
@@ -85,6 +126,47 @@ ModelImporter:
     400074: Cylinder_014
     400076: Cylinder_015
     400078: Icosphere_001
+    400080: Cylinder_000
+    400082: Cylinder_016
+    400084: origin_002
+    400086: Cube_017
+    400088: Cube_018
+    400090: Cube_019
+    400092: Cube_020
+    400094: Cube_021
+    400096: Cylinder_017
+    400098: Cylinder_018
+    400100: Cylinder_019
+    400102: Cylinder_020
+    400104: Cylinder_021
+    400106: Cylinder_022
+    400108: Icosphere_002
+    400110: Cube_022
+    400112: Cube_023
+    400114: Cube_024
+    400116: Cube_025
+    400118: Cube_026
+    400120: Cube_027
+    400122: Cube_028
+    400124: Cylinder_023
+    400126: Cylinder_024
+    400128: Cylinder_025
+    400130: Cylinder_026
+    400132: Cylinder_027
+    400134: Cylinder_028
+    400136: Cylinder_029
+    400138: Cylinder_030
+    400140: Cylinder_031
+    400142: Cylinder_032
+    400144: Cylinder_033
+    400146: Cylinder_034
+    400148: Icosphere_003
+    400150: origin_004
+    400152: Cube_029
+    400154: Cube_030
+    400156: Cube_031
+    400158: Cube_032
+    400160: Cube_033
     2300000: //RootNode
     2300002: Cube
     2300004: Cube_001
@@ -123,6 +205,45 @@ ModelImporter:
     2300070: Cylinder_014
     2300072: Cylinder_015
     2300074: Icosphere_001
+    2300076: Cylinder_000
+    2300078: Cylinder_016
+    2300080: Cube_017
+    2300082: Cube_018
+    2300084: Cube_019
+    2300086: Cube_020
+    2300088: Cube_021
+    2300090: Cylinder_017
+    2300092: Cylinder_018
+    2300094: Cylinder_019
+    2300096: Cylinder_020
+    2300098: Cylinder_021
+    2300100: Cylinder_022
+    2300102: Icosphere_002
+    2300104: Cube_022
+    2300106: Cube_023
+    2300108: Cube_024
+    2300110: Cube_025
+    2300112: Cube_026
+    2300114: Cube_027
+    2300116: Cube_028
+    2300118: Cylinder_023
+    2300120: Cylinder_024
+    2300122: Cylinder_025
+    2300124: Cylinder_026
+    2300126: Cylinder_027
+    2300128: Cylinder_028
+    2300130: Cylinder_029
+    2300132: Cylinder_030
+    2300134: Cylinder_031
+    2300136: Cylinder_032
+    2300138: Cylinder_033
+    2300140: Cylinder_034
+    2300142: Icosphere_003
+    2300144: Cube_029
+    2300146: Cube_030
+    2300148: Cube_031
+    2300150: Cube_032
+    2300152: Cube_033
     3300000: //RootNode
     3300002: Cube
     3300004: Cube_001
@@ -161,6 +282,45 @@ ModelImporter:
     3300070: Cylinder_014
     3300072: Cylinder_015
     3300074: Icosphere_001
+    3300076: Cylinder_000
+    3300078: Cylinder_016
+    3300080: Cube_017
+    3300082: Cube_018
+    3300084: Cube_019
+    3300086: Cube_020
+    3300088: Cube_021
+    3300090: Cylinder_017
+    3300092: Cylinder_018
+    3300094: Cylinder_019
+    3300096: Cylinder_020
+    3300098: Cylinder_021
+    3300100: Cylinder_022
+    3300102: Icosphere_002
+    3300104: Cube_022
+    3300106: Cube_023
+    3300108: Cube_024
+    3300110: Cube_025
+    3300112: Cube_026
+    3300114: Cube_027
+    3300116: Cube_028
+    3300118: Cylinder_023
+    3300120: Cylinder_024
+    3300122: Cylinder_025
+    3300124: Cylinder_026
+    3300126: Cylinder_027
+    3300128: Cylinder_028
+    3300130: Cylinder_029
+    3300132: Cylinder_030
+    3300134: Cylinder_031
+    3300136: Cylinder_032
+    3300138: Cylinder_033
+    3300140: Cylinder_034
+    3300142: Icosphere_003
+    3300144: Cube_029
+    3300146: Cube_030
+    3300148: Cube_031
+    3300150: Cube_032
+    3300152: Cube_033
     4300000: Cube
     4300002: Icosphere
     4300004: Cylinder_007
@@ -198,6 +358,45 @@ ModelImporter:
     4300068: Cylinder_015
     4300070: Cylinder_014
     4300072: Cylinder_013
+    4300074: Cylinder_016
+    4300076: Cylinder_000
+    4300078: Cube_021
+    4300080: Cube_020
+    4300082: Cube_019
+    4300084: Cylinder_019
+    4300086: Cube_018
+    4300088: Cylinder_018
+    4300090: Icosphere_002
+    4300092: Cylinder_017
+    4300094: Cube_017
+    4300096: Cylinder_022
+    4300098: Cylinder_021
+    4300100: Cylinder_020
+    4300102: Cube_028
+    4300104: Cylinder_034
+    4300106: Cylinder_033
+    4300108: Cylinder_032
+    4300110: Cylinder_031
+    4300112: Cylinder_030
+    4300114: Cube_027
+    4300116: Cube_026
+    4300118: Cube_025
+    4300120: Cube_024
+    4300122: Cylinder_025
+    4300124: Cube_023
+    4300126: Cylinder_024
+    4300128: Icosphere_003
+    4300130: Cylinder_023
+    4300132: Cube_022
+    4300134: Cylinder_027
+    4300136: Cylinder_028
+    4300138: Cylinder_026
+    4300140: Cylinder_029
+    4300142: Cube_030
+    4300144: Cube_029
+    4300146: Cube_033
+    4300148: Cube_032
+    4300150: Cube_031
     7400000: Default Take
     9500000: //RootNode
   materials:

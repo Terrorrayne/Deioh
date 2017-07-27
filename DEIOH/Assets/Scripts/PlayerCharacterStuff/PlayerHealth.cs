@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class PlayerHealth : CharacterHealth
 {
+	public float healthyness = 100f; // the less healthy, the more hurty
+	public AnimationCurve healthCurve; // the less healthy you are, the more damage you 
+
 	public Slider maxHPSlider;
 	public Slider curHPSlider;
 	public Slider maxStSlider;
@@ -38,7 +41,7 @@ public class PlayerHealth : CharacterHealth
 
 		float healthValue = currentHP / startingHP;
 		_pulseTime += Time.deltaTime * healthHeartRate.Evaluate(currentHP / maximumHP);
-		float pulse1 = healthFlarePulseWave.Evaluate((_pulseTime + 0.1f) % 1f);
+		float pulse1 = healthFlarePulseWave.Evaluate((_pulseTime + 0.125f) % 1f);
 		float pulse2 = healthFlarePulseWave.Evaluate(_pulseTime % 1f);
 		_pulseTime %= 1; // don't go crazy...
 
