@@ -43,6 +43,18 @@ ModelImporter:
     100070: Head
     100072: Toe_L
     100074: Toe_R
+    100076: Foot_IK_L
+    100078: Foot_IK_R
+    100080: Foot_Main_L
+    100082: Foot_Main_R
+    100084: FootRoll_Heel_L
+    100086: FootRoll_Heel_R
+    100088: FootRoll_Main_L
+    100090: FootRoll_Main_R
+    100092: FootRoll_Toe_L
+    100094: FootRoll_Toe_R
+    100096: Knee_Target_L
+    100098: Knee_Target_R
     400000: Cube_001
     400002: Cube_012
     400004: Cube_032
@@ -81,6 +93,18 @@ ModelImporter:
     400070: Head
     400072: Toe_L
     400074: Toe_R
+    400076: Foot_IK_L
+    400078: Foot_IK_R
+    400080: Foot_Main_L
+    400082: Foot_Main_R
+    400084: FootRoll_Heel_L
+    400086: FootRoll_Heel_R
+    400088: FootRoll_Main_L
+    400090: FootRoll_Main_R
+    400092: FootRoll_Toe_L
+    400094: FootRoll_Toe_R
+    400096: Knee_Target_L
+    400098: Knee_Target_R
     2300000: Cube_001
     2300002: Cube_012
     2300004: Cube_032
