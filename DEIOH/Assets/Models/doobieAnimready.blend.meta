@@ -55,6 +55,7 @@ ModelImporter:
     100094: FootRoll_Toe_R
     100096: Knee_Target_L
     100098: Knee_Target_R
+    100100: Empty
     400000: Cube_001
     400002: Cube_012
     400004: Cube_032
@@ -105,6 +106,7 @@ ModelImporter:
     400094: FootRoll_Toe_R
     400096: Knee_Target_L
     400098: Knee_Target_R
+    400100: Empty
     2300000: Cube_001
     2300002: Cube_012
     2300004: Cube_032
@@ -136,6 +138,8 @@ ModelImporter:
     4300016: Cylinder_001
     4300018: Cube_001
     7400000: Default Take
+    7400002: CoolPoseForCoolDudes
+    7400004: walking
     9500000: //RootNode
     13700000: Cube_033
   materials:

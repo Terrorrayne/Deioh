@@ -107,7 +107,7 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: de1835e0e5dada34d9a7aaf47228c3d4, type: 2}
 --- !u!1001 &12780508
 Prefab:
   m_ObjectHideFlags: 0
@@ -10415,7 +10415,7 @@ GameObject:
   - component: {fileID: 737128001}
   m_Layer: 0
   m_Name: knight topdown
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14989,6 +14989,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 195408264387655180, guid: 7bcdc4fccceb19d4ebbdaeceb4c3ceca,
+        type: 2}
+      propertyPath: m_AgentTypeID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 136170593844052166, guid: 7bcdc4fccceb19d4ebbdaeceb4c3ceca,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 195408264387655180, guid: 7bcdc4fccceb19d4ebbdaeceb4c3ceca,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bcdc4fccceb19d4ebbdaeceb4c3ceca, type: 2}
   m_IsPrefabParent: 0
@@ -17290,7 +17305,7 @@ GameObject:
   m_PrefabParentObject: {fileID: 1478247827310080, guid: 7bcdc4fccceb19d4ebbdaeceb4c3ceca,
     type: 2}
   m_PrefabInternal: {fileID: 1519184216}
---- !u!114 &1983879634
+--- !u!114 &1983879635
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -17298,11 +17313,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1983879628}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 709acfebb3b0f514c8fa6375620593c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fa8768c521560c4f85e5a77def295a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullet: {fileID: 1579369760898628, guid: a917ca1afb03a874286e4d3c106c458f, type: 2}
-  rate: 60
+  idleDistance: 20
+  engagedDistance: 10
+  comfyShootingDist: 5
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  moveSpeed: 10
+  repositionMoveSpeed: 15
+  burstSpacing: 0.2
+  shootingTimeLimit: 3
+  moveState: 0
+  THINGY: {fileID: 0}
+  stunTimer: 0
+  target: {fileID: 737128008}
 --- !u!1 &2007482696
 GameObject:
   m_ObjectHideFlags: 0
