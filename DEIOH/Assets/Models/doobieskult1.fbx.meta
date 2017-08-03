@@ -53,7 +53,7 @@ ModelImporter:
     4300014: Cylinder.008
     4300016: Cylinder.007
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
