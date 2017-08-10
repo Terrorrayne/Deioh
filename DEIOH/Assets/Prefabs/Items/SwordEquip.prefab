@@ -144,8 +144,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1124800931640218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 1.8800001}
-  m_LocalScale: {x: 2.5799596, y: 1, z: 3.7496452}
+  m_LocalPosition: {x: 0, y: 1, z: 1.02}
+  m_LocalScale: {x: 2.0747705, y: 1, z: 2.0304577}
   m_Children: []
   m_Father: {fileID: 4897081973420318}
   m_RootOrder: 1
@@ -157,8 +157,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1975704810136754}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1, z: 3}
-  m_LocalScale: {x: 2.8571427, y: 2.8571448, z: 2.8571448}
+  m_LocalPosition: {x: 0, y: 1, z: 1.54}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 4897081973420318}
   m_RootOrder: 0
@@ -170,7 +170,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1724423959765216}
   m_LocalRotation: {x: -0, y: -0, z: 3.3651304e-11, w: 1}
-  m_LocalPosition: {x: -1.5432485, y: 1.97, z: 6.789106}
+  m_LocalPosition: {x: -4.3662014, y: 3.3, z: 6.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4375206414314498}
@@ -304,8 +304,7 @@ MonoBehaviour:
   equip: {fileID: 1087143297469244}
   myrigidbody: {fileID: 54737901913012270}
   mycollider: {fileID: 65254718686751450}
-  animator: {fileID: 95727670555418012}
-  myHealth: {fileID: 0}
+  spriteAnimator: {fileID: 95727670555418012}
   hitboxDefinition: {fileID: 4670887852642840}
   layermask:
     serializedVersion: 2
@@ -351,6 +350,8 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!212 &212830877298998080
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -391,3 +392,5 @@ SpriteRenderer:
   m_Size: {x: 1.28, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0

@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114342767465590176}
   - component: {fileID: 114574726172614088}
   - component: {fileID: 195408264387655180}
+  - component: {fileID: 114319820348777750}
   m_Layer: 10
   m_Name: DummyEnemy
   m_TagString: Untagged
@@ -84,6 +85,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1478247827310080}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114319820348777750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1478247827310080}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa8768c521560c4f85e5a77def295a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleDistance: 20
+  engagedDistance: 10
+  comfyShootingDist: 5
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  moveSpeed: 10
+  repositionMoveSpeed: 15
+  burstSpacing: 0.2
+  shootingTimeLimit: 3
+  moveState: 0
+  THINGY: {fileID: 0}
+  stunTimer: 0
+  target: {fileID: 0}
 --- !u!114 &114342767465590176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 709acfebb3b0f514c8fa6375620593c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoshoot: 0
   Bullet: {fileID: 1579369760898628, guid: a917ca1afb03a874286e4d3c106c458f, type: 2}
   rate: 60
 --- !u!136 &136170593844052166
@@ -126,7 +153,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1478247827310080}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -137,8 +164,8 @@ NavMeshAgent:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1478247827310080}
-  m_Enabled: 1
-  m_AgentTypeID: -1372625422
+  m_Enabled: 0
+  m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
   m_Acceleration: 8
