@@ -18,9 +18,7 @@ public class CharacterMovement : MonoBehaviour
 
 	private void Start()
 	{
-		// lock our mouse plz
-		Cursor.lockState = CursorLockMode.Locked;
-		Cursor.visible = false;
+
 	}
 
 	private void Update()

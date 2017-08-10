@@ -9,6 +9,9 @@ public class DeiohGame : MonoBehaviour
 	public PlayableCharacter player; // which game is the player in control of
 	public BasicFollowCam gameCamera; // camera that follows the player
 
+	bool isConsoleOpen = false;
+	public GameObject consoleCanvas;
+
 	// Use this for initialization
 	void Start()
 	{
@@ -21,11 +24,42 @@ public class DeiohGame : MonoBehaviour
 		{
 			Destroy(gameObject);
 		}
+
+		Time.timeScale = 1;
+		consoleCanvas.SetActive(false);
+		// lock our mouse plz
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
+		if (Input.GetKeyDown(KeyCode.BackQuote))
+		{
+			isConsoleOpen = !isConsoleOpen;
 
+			if (isConsoleOpen)
+			{
+				// pause game, and ai
+				Time.timeScale = 0;
+				// open console
+				consoleCanvas.SetActive(true);
+				// unlock cusor
+				Cursor.lockState = CursorLockMode.None;
+				Cursor.visible = true;
+
+				consoleCanvas.GetComponent<Console>().Init();
+			}
+			else
+			{
+				Time.timeScale = 1;
+				consoleCanvas.SetActive(false);
+				// lock our mouse plz
+				Cursor.lockState = CursorLockMode.Locked;
+				Cursor.visible = false;
+			}
+
+		}
 	}
 }

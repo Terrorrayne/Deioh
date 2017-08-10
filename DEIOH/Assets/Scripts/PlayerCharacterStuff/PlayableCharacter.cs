@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-[RequireComponent (typeof(CharacterHealth))]
-public class PlayableCharacter : MonoBehaviour {
+[RequireComponent(typeof(CharacterHealth))]
+public class PlayableCharacter : MonoBehaviour
+{
 
 	// class that defines whether a gameobject is a character that can be played by the player
 	// character's death effects overall gamestate
@@ -18,7 +17,7 @@ public class PlayableCharacter : MonoBehaviour {
 	public void Awake()
 	{
 		// get all references
-	 	health = GetComponent<CharacterHealth>();
+		health = GetComponent<CharacterHealth>();
 		movement = GetComponent<CharacterMovement>();
 		inventory = GetComponent<Inventory>();
 		interaction = GetComponent<PlayerButtonInteraction>();
@@ -28,7 +27,7 @@ public class PlayableCharacter : MonoBehaviour {
 	{
 		if (DeiohGame.self.player == this) // if we are the chosen one
 		{
-			
+
 		}
 	}
 }

@@ -9,6 +9,8 @@ public class InventoryItem : ScriptableObject
 	public Sprite itemSprite;
 	[Tooltip("The prefab to use when placed in world, this prefab in turn should have a reference to this InventoryItem")]
 	public GameObject prefab;
+	public bool playerCanUse = false;
+	public bool enemyCanUse = false;
 }
 
 

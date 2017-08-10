@@ -3,8 +3,9 @@
 public class IB_Sword : ItemBehavior
 {
 
-	public Animator animator;
-	public PlayerHealth myHealth;
+	public Animator spriteAnimator;
+	PlayerHealth myHealth;
+	Animator myAnimator;
 
 	public Transform hitboxDefinition;
 	public LayerMask layermask;
@@ -14,6 +15,7 @@ public class IB_Sword : ItemBehavior
 	{
 		base.Start();
 		myHealth = GetComponentInParent<PlayerHealth>();
+		myAnimator = transform.parent.GetComponentInChildren<Animator>();
 	}
 
 	public override void EquipThisItem(GameObject characterUsingItem) // used for initialization of item
@@ -29,7 +31,9 @@ public class IB_Sword : ItemBehavior
 				// get forward dir
 
 				// apply hitbox and play animation
-				animator.SetTrigger("attack");
+				spriteAnimator.SetTrigger("attack");
+
+				myAnimator.Play("AttackIn");
 
 				Collider[] hitObj = Physics.OverlapBox(hitboxDefinition.transform.position, hitboxDefinition.localScale * 0.5f, hitboxDefinition.rotation, layermask);
 				for (int i = 0; i < hitObj.Length; i++)
