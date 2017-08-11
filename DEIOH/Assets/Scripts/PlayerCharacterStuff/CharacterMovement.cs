@@ -16,9 +16,11 @@ public class CharacterMovement : MonoBehaviour
 
 	public float movementMultiplier = 1f;
 
+	Animator myAnimator;
+
 	private void Start()
 	{
-
+		myAnimator = GetComponentInChildren<Animator>();
 	}
 
 	private void Update()
@@ -87,13 +89,31 @@ public class CharacterMovement : MonoBehaviour
 			GetComponent<CharacterController>().SimpleMove(movementMultiplier * (new Vector3(input.x, 0, input.y) * moveSpeed * inputMag) + inertia);
 
 			focusposition = characterModel.forward * moveSpeed * inputMag;
+
+			// idk
+			if (inputMag > 0) // we are walking 
+			{
+
+				myAnimator.SetBool("Walking", true);
+			}
+			else
+			{
+				myAnimator.SetBool("Walking", false);
+			}
+
 		}
 		else
 		{
-			if (inputMag > 0)
+			if (inputMag > 0) // we are walking 
 			{
 				characterModel.localRotation = Quaternion.Euler(0, angle, 0);
 				//transform.localRotation = Quaternion.Euler(0, angle, 0);
+
+				myAnimator.SetBool("Walking", true);
+			}
+			else
+			{
+				myAnimator.SetBool("Walking", false);
 			}
 
 			// apply input to movement

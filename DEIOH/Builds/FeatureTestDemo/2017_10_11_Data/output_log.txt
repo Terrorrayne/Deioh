@@ -1,0 +1,600 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   22.21.13.8205
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Pathfinding.ClipperLib.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Pathfinding.ClipperLib.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Pathfinding.Poly2Tri.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Pathfinding.Poly2Tri.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\MonitorComponents.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\MonitorComponents.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\ProBuilderCore-Unity5.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\ProBuilderCore-Unity5.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\ProBuilderMeshOps-Unity5.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\ProBuilderMeshOps-Unity5.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\KDTree.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\KDTree.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\pb_Stl.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\pb_Stl.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Triangle.dll (this message is harmless)
+Loading C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\Triangle.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\jonat\Documents\GitHub\Deioh\DEIOH\Builds\FeatureTestDemo\2017_10_11_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.022 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.916430 ms
+Collecting Meshes
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Some meshes were statically batched. These meshes can not be used for navmesh calculation due to technical constraints.
+During runtime scripts cannot access the data of meshes which have been statically batched.
+One way to solve this problem is to use cached startup (Save & Load tab in the inspector) to only calculate the graph when the game is not playing.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Generating Tile #0 of 16
+Generating Tile #1 of 16
+Generating Tile #2 of 16
+Generating Tile #3 of 16
+Generating Tile #4 of 16
+Generating Tile #5 of 16
+Generating Tile #6 of 16
+Generating Tile #7 of 16
+Generating Tile #8 of 16
+Generating Tile #9 of 16
+Generating Tile #10 of 16
+Generating Tile #11 of 16
+Generating Tile #12 of 16
+Generating Tile #13 of 16
+Generating Tile #14 of 16
+Generating Tile #15 of 16
+Assigning Graph Indices
+Connecing Tile #0 of 16
+Connecing Tile #1 of 16
+Connecing Tile #2 of 16
+Connecing Tile #3 of 16
+Connecing Tile #4 of 16
+Connecing Tile #5 of 16
+Connecing Tile #6 of 16
+Connecing Tile #7 of 16
+Connecing Tile #8 of 16
+Connecing Tile #9 of 16
+Connecing Tile #10 of 16
+Connecing Tile #11 of 16
+Connecing Tile #12 of 16
+Connecing Tile #13 of 16
+Connecing Tile #14 of 16
+Connecing Tile #15 of 16
+Scanning - Process took 64 ms to complete
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at IB_Sword.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 3f28 -> priority: 1 
+  Thread -> id: 1e44 -> priority: 1 
+  Thread -> id: 471c -> priority: 1 
+  Thread -> id: 18b0 -> priority: 1 

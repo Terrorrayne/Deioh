@@ -31,7 +31,7 @@ public class Console : MonoBehaviour
 	{
 		if (Application.isEditor)
 		{
-			UnityEditor.EditorApplication.isPlaying = false;
+			//UnityEditor.EditorApplication.isPlaying = false;
 		}
 		Application.Quit();
 	}
