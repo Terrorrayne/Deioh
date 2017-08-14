@@ -101,44 +101,10 @@ namespace Pathfinding {
 		 * Binary heap to keep track of nodes on the "Open list".
 		 * \see https://en.wikipedia.org/wiki/A*_search_algorithm
 		 */
-		private BinaryHeapM heap = new BinaryHeapM(128);
+		public readonly BinaryHeap heap = new BinaryHeap(128);
 
 		/** ID for the path currently being calculated or last path that was calculated */
 		public ushort PathID { get { return pathID; } }
-
-		/** Push a node to the heap */
-		public void PushNode (PathNode node) {
-			heap.Add(node);
-		}
-
-		/** Pop the node with the lowest F score from the heap */
-		public PathNode PopNode () {
-			return heap.Remove();
-		}
-
-		/** The internal heap.
-		 * \note Most things can be accomplished with other methods on this class instead.
-		 *
-		 * \see PushNode
-		 * \see PopNode
-		 * \see HeapEmpty
-		 */
-		public BinaryHeapM GetHeap () {
-			return heap;
-		}
-
-		/** Rebuild the heap to account for changed node values.
-		 * Some path types change the target for the H score in the middle of the path calculation,
-		 * that requires rebuilding the heap to keep it correctly sorted.
-		 */
-		public void RebuildHeap () {
-			heap.Rebuild();
-		}
-
-		/** True if the heap is empty */
-		public bool HeapEmpty () {
-			return heap.numberOfItems <= 0;
-		}
 
 		/** Log2 size of buckets.
 		 * So 10 yields a real bucket size of 1024.
@@ -167,29 +133,6 @@ namespace Pathfinding {
 		public PathHandler (int threadID, int totalThreadCount) {
 			this.threadID = threadID;
 			this.totalThreadCount = totalThreadCount;
-
-#if ASTAR_INIT_BUCKETS && !ASTAR_CONTINOUS_PATH_DATA
-			for (int bucketNumber = 10; bucketNumber >= 0; bucketNumber--) {
-				if (bucketNumber >= nodes.Length) {
-					//At least increase the size to:
-					//Current size * 1.5
-					//Current size + 2 or
-					//bucketNumber
-
-					PathNode[][] newNodes = new PathNode[System.Math.Max(System.Math.Max(nodes.Length*3 / 2, bucketNumber+1), nodes.Length+2)][];
-					for (int i = 0; i < nodes.Length; i++) newNodes[i] = nodes[i];
-					// Resizing Bucket List from nodes.Length to newNodes.Length for bucket #bucketNumber
-					nodes = newNodes;
-				}
-
-				if (nodes[bucketNumber] == null) {
-					// Creating Bucket #bucketNumber
-					PathNode[] ns = new PathNode[BucketSize];
-					for (int i = 0; i < BucketSize; i++) ns[i] = new PathNode();
-					nodes[bucketNumber] = ns;
-				}
-			}
-#endif
 		}
 
 		public void InitializeForPath (Path p) {
@@ -201,9 +144,14 @@ namespace Pathfinding {
 		public void DestroyNode (GraphNode node) {
 			PathNode pn = GetPathNode(node);
 
-			//Clean up reference to help GC
+			// Clean up references to help the GC
 			pn.node = null;
 			pn.parent = null;
+			// This is not required for pathfinding, but not clearing it may confuse gizmo drawing for a fraction of a second.
+			// Especially when 'Show Search Tree' is enabled
+			pn.pathID = 0;
+			pn.G = 0;
+			pn.H = 0;
 		}
 
 		/** Internal method to initialize node data */

@@ -12,9 +12,8 @@ namespace Pathfinding {
 		 * This function should not be used directly. Instead use the Path.Claim and Path.Release functions.
 		 */
 		public static void Pool (Path path) {
-			#if !ASTAR_NO_POOLING
 			lock (pool) {
-				if (path.pooled) {
+				if (((IPathInternals)path).Pooled) {
 					throw new System.ArgumentException("The path is already pooled.");
 				}
 
@@ -24,11 +23,10 @@ namespace Pathfinding {
 					pool[path.GetType()] = poolStack;
 				}
 
-				path.pooled = true;
-				path.OnEnterPool();
+				((IPathInternals)path).Pooled = true;
+				((IPathInternals)path).OnEnterPool();
 				poolStack.Push(path);
 			}
-			#endif
 		}
 
 		/** Total created instances of paths of the specified type */
@@ -54,11 +52,6 @@ namespace Pathfinding {
 
 		/** Get a path from the pool or create a new one if the pool is empty */
 		public static T GetPath<T>() where T : Path, new() {
-			#if ASTAR_NO_POOLING
-			T result = new T();
-			result.Reset();
-			return result;
-			#else
 			lock (pool) {
 				T result;
 				Stack<Path> poolStack;
@@ -76,16 +69,17 @@ namespace Pathfinding {
 					totalCreated[typeof(T)]++;
 				}
 
-				result.pooled = false;
-				result.Reset();
+				((IPathInternals)result).Pooled = false;
+				((IPathInternals)result).Reset();
 				return result;
 			}
-			#endif
 		}
 	}
 
-	/** Pools path objects to reduce load on the garbage collector */
-	[System.Obsolete("Genric version is now obsolete to trade an extremely tiny performance decrease for a large decrease in boilerplate for Path classes")]
+	/** Pools path objects to reduce load on the garbage collector.
+	 * \deprecated Generic version is now obsolete to trade an extremely tiny performance decrease for a large decrease in boilerplate for Path classes
+	 */
+	[System.Obsolete("Generic version is now obsolete to trade an extremely tiny performance decrease for a large decrease in boilerplate for Path classes")]
 	public static class PathPool<T> where T : Path, new() {
 		/** Recycles a path and puts in the pool.
 		 * This function should not be used directly. Instead use the Path.Claim and Path.Release functions.
